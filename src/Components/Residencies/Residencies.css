@@ -1,0 +1,80 @@
+.r-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.r-head {
+  margin-bottom: 2rem;
+}
+
+.r-card {
+  gap: 0.6rem;
+  padding: 1rem;
+  max-width: max-content;
+  margin: auto;
+  border-radius: 10px;
+  transition: all 200ms ease-in;
+}
+
+.r-card > img {
+  width: 100%;
+  max-width: 25rem;
+}
+
+.r-card > :nth-child(2) {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.r-card > :nth-child(3) {
+  font-size: 1.5rem;
+}
+
+.r-card > :nth-child(4) {
+  font-size: 0.7rem;
+  width: 15rem;
+}
+
+.r-card:hover {
+  scale: 1.025;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(
+    180deg,
+    rgba(112, 80, 54, 0.731) 0%,
+    rgba(217, 217, 237, 0.703)
+  );
+  box-shadow: 0px 70px 50px -50px black;
+}
+
+.swiper-horizontal {
+  overflow: visible;
+}
+
+.r-button {
+  /* display: flex; */
+  gap: 1rem; /* space between buttons */
+  /* justify-content: center; */
+  align-items: center;
+  position: absolute;
+  top: -4rem;
+  right: 40px;
+  background: #fff;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12); */
+  padding: 0.5rem 1.5rem;
+  /* width: fit-content; */
+}
+
+.r-button button {
+  font-size: 1.5rem;
+  padding: 0.3rem 1rem;
+  color: blue;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+  /* transition: background 0.2s; */
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.08);
+}
+
