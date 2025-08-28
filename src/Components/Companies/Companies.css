@@ -7,3 +7,9 @@
 .c-container>img{
     width: 9rem;
 }
+
+@media (max-width:680px) {
+    .c-container{
+        width: auto;
+    }
+}

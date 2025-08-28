@@ -2,6 +2,8 @@ import React from "react";
 import { HiLocationMarker } from "react-icons/hi";
 import "./Extra.css";
 import CountUp from "react-countup";
+import {animate, motion} from 'framer-motion'
+import { type } from "@testing-library/user-event/dist/type";
 export default function Extra() {
   return (
     <section className="extra-wrapper">
@@ -9,10 +11,13 @@ export default function Extra() {
         <div className=" flexColStart extra-left">
           <div className="extra-title">
             <div className="blue-circle"></div>
-            <h1>
+            <motion.h1
+              initial={{ y: "2rem", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 2, type: "ease-in" }}>
               {" "}
               We have <br /> the best <br /> Property{" "}
-            </h1>
+            </motion.h1>
           </div>
 
           <div className="extra-desc  flexColStart secondaryText">
@@ -51,9 +56,13 @@ export default function Extra() {
           </div>
         </div>
         <div className="extra-right flexCenter">
-          <div className="image-container">
+          <motion.div
+            initial={{ y: "2rem", opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 2, type: "ease-in" }}
+            className="image-container">
             <img src="bgcMain.jpg" alt="Not Loading" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -58,3 +58,18 @@
     color: aliceblue;
     scale: 0.8;
 }
+
+@media (max-width:1024px){
+    .c-container{
+        flex-direction: column;
+        /* width: auto; */
+    }
+    .c-right{
+        justify-content: center;
+    }
+
+    .row{
+        flex-direction: column;
+       
+    }
+}
